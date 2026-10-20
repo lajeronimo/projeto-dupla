@@ -16,19 +16,19 @@ public class Curso {
     @Id 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="id")
-    private Integer id
+    private Integer id;
 
     @Column(name="nome")
-    private String nome
+    private String nome;
 
     @Column(name="descricao")
-    private String descricao
+    private String descricao;
 
     @Column(name="data_inicio")
-    private Date dataInicio
+    private LocalDate dataInicio;
 
     @Column(name="data_termino")
-    private Date dataTermino
+    private LocalDate dataTermino;
 
     @ManyToMany
     @JoinTable(

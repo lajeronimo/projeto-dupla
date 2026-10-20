@@ -15,13 +15,13 @@ public class Usuario {
     @Id 
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="id")
-    private Integer id
+    private Integer id;
 
     @Column(name="nome")
-    private String nome
+    private String nome;
     
     @Column(name="cpf")
-    private String cpf
+    private String cpf;
 
     @ManyToOne 
     @JoinColumn(name="curso_id")
